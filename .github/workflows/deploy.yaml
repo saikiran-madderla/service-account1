@@ -32,6 +32,7 @@ jobs:
           --runtime python310 \
           --trigger-topic my-topic \
           --entry-point send_notification \
+          --no-gen2 \
           --source . \
           --region=us-central1 \
           --set-env-vars="username=${{ secrets.EMAIL_USERNAME }},password=${{ secrets.EMAIL_PASSWORD }},sender=${{ secrets.EMAIL_SENDER }},SMTP=${{ secrets.EMAIL_SMTP }},recipients=${{ secrets.EMAIL_RECIPIENTS }}"
