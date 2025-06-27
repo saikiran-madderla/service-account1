@@ -24,7 +24,7 @@ jobs:
         service_account: "github-actions-test@andrew-devops-test-delete.iam.gserviceaccount.com"
 
     - name: Set up gcloud CLI
-      uses: google-github-actions/setup-gcloud@v1
+      uses: google-github-actions/setup-gcloud@v2
 
     - name: Deploy Cloud Function
       run: |
